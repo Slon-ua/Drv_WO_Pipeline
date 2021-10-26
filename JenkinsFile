@@ -16,7 +16,7 @@ pipeline  {
                 dir("./") {
                     git branch: 'main', url: 'git@github.com:driveroo/WO_with-without_maintenance.git', credentialsId: 'Jenkins-GitHub-SSH-Key'
                 }
-                // sh 'pwd'
+                //// sh 'pwd'
                 // sh 'ls -la'
                 // sh 'cd ./fleet_autorization'
                 // sh 'pwd'
