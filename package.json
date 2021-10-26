@@ -1,0 +1,14 @@
+{
+  "name": "swapi",
+  "version": "1.0.0",
+  "description": "Project first",
+  "scripts": {
+    "api-WO_Sandbox": "newman run ./Maintenance/WO.sand.json  -e ./Maintenance/sand.json --reporters cli,junit --reporter-junit-export newman.xml",
+    "api-WO_Production": "newman run ./Maintenance/WO.prod.json  -e ./Maintenance/prod.json --reporters cli,junit --reporter-junit-export newman.xml",
+    "api-WO_4443": "newman run ./Maintenance/WO.sand4443.json  -e ./Maintenance/sand.4443.json --reporters cli,junit --reporter-junit-export newman.xml"
+  },
+  "author": "Sergii Kokhan",
+  "dependencies": {
+    "newman": "^4.5.7"
+  }
+}
